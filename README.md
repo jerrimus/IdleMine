@@ -1,25 +1,35 @@
 # IdleMine
  Graphic cryptocurrency miner for windows.
 
-![IM pic](https://i.imgur.com/V2T0cXJ.png in action")
+[IM pic](https://i.imgur.com/V2T0cXJ.png in action")
 
 
-    Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the [xmrig](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and inputting wallet/pool info (don't forget to save it!).
+    Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the 
+    [xmrig](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and 
+    inputting wallet/pool info (don't forget to save it!).
      
       
         There are 3 modes of operation:
         
         * Active mode: uses low cpu for when you are browsing or doing light computing.
          
-        * Idle Mine: if no activity (keyboard or mouse input) is detected in the timeframe you select, mining begins automatically 
+        * Idle Mine: if no activity (keyboard or mouse input) is detected in the timeframe you 
+        select, mining begins automatically 
          
         * Normal mode: push start and walk away
         
         
-          Currently only cryptonote coins are implemented, I do not know if it's worth it to mine any other algo. If I'm wrong tell me so and maybe we can fix it.  GPU mining is not implemented, there are too many variables. This is primarily designed as an entry point to cryptomining, and (hopefully) a decent alterative to minergate.
+          Currently only cryptonote coins are implemented, I do not know if it's worth it to mine 
+          any other algo. If I'm wrong tell me so and maybe we can fix it.  GPU mining is not implemented,
+          there are too many variables. This is primarily designed as an entry point to cryptomining, and
+          (hopefully) a decent alterative to minergate.
         
-              There is not a nicehash option, until the security issues are resolved I do not think I will add one.
-        I know there are cryptonote coins not listed, charnacoin, freelabits, and ultranote as poccibilities, but don't have more than 1-2 servers.  A lot of other cryptonote coins are dead projects that are only still being traded bcause of minergate and/or name confusion (bytecoin&dashcoin). If you know of a good currency I've missed please let me know.   
+              There is not a nicehash option, until the security issues are resolved I do not think 
+              I will add one.
+        I know there are cryptonote coins not listed, charnacoin, freelabits, and ultranote as poccibilities,
+        but don't have more than 1-2 servers.  A lot of other cryptonote coins are dead projects that are only
+        still being traded bcause of minergate and/or name confusion (bytecoin&dashcoin). If you know of a good 
+        currency I've missed please let me know.   
          
            I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's to buggy or my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are much better at it have not put in the effort.
            If you know how to set up a bugtracker on github HMU here or on reddit or email: jerry@fam-base.net.
