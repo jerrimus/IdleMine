@@ -1,0 +1,17 @@
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\jerry\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\IdleMine.exe.config
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.IdleMine.resources
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.Resources.resources
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\IdleMine.exe
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\IdleMine.pdb
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\IdleMine.xml
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.exe
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.xml
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.pdb
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\IdleMine.exe.manifest
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\IdleMine.application
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.exe.manifest
+C:\Users\jerry\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\IdleMine.application

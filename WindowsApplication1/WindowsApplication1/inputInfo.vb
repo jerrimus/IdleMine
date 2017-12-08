@@ -1,0 +1,4 @@
+﻿
+Class inputInfo
+
+End Class
