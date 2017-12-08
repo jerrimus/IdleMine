@@ -19,6 +19,9 @@
         * Normal mode: push start and walk away
         
         
+        IM displays data from the miner onscreen, I would display hashrate but the json that xmrig exports has
+        a zero for a field and I haven't figured that out yet.
+        
           Currently only cryptonote coins are implemented, I do not know if it's worth it to cpu mine 
           any other algo. If I'm wrong tell me so and maybe we can fix it.  GPU mining is not implemented,
           there are too many variablesfor new people. This is primarily designed as an entry point to cryptomining, and
