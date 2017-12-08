@@ -1,7 +1,7 @@
 # IdleMine
  Graphic cryptocurrency miner for windows.
 
-[IM pic](https://i.imgur.com/V2T0cXJ.png in action")
+![IM pic](https://i.imgur.com/V2T0cXJ.png "in action")
 
 
     Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the 
@@ -19,9 +19,9 @@
         * Normal mode: push start and walk away
         
         
-          Currently only cryptonote coins are implemented, I do not know if it's worth it to mine 
+          Currently only cryptonote coins are implemented, I do not know if it's worth it to cpu mine 
           any other algo. If I'm wrong tell me so and maybe we can fix it.  GPU mining is not implemented,
-          there are too many variables. This is primarily designed as an entry point to cryptomining, and
+          there are too many variablesfor new people. This is primarily designed as an entry point to cryptomining, and
           (hopefully) a decent alterative to minergate.
         
               There is not a nicehash option, until the security issues are resolved I do not think 
@@ -31,6 +31,9 @@
         still being traded bcause of minergate and/or name confusion (bytecoin&dashcoin). If you know of a good 
         currency I've missed please let me know.   
          
+            At the moment IM is a windows only application and does require .net 4 or greater. I used winforms despite a preference for wpf so that porting will not be too difficult (hopefully). I don't have a inux or mac machine atm, nut if anyone felt like it I would not be upset.
+            
+            
            I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's to buggy or my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are much better at it have not put in the effort.
            If you know how to set up a bugtracker on github HMU here or on reddit or email: jerry@fam-base.net.
         
