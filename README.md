@@ -31,14 +31,18 @@
         still being traded bcause of minergate and/or name confusion (bytecoin&dashcoin). If you know of a good 
         currency I've missed please let me know.   
          
-            At the moment IM is a windows only application and does require .net 4 or greater. I used winforms despite a preference for wpf so that porting will not be too difficult (hopefully). I don't have a inux or mac machine atm, nut if anyone felt like it I would not be upset.
+            At the moment IM is a windows only application and does require .net 4 or greater. I used winforms despite
+            a preference for wpf so that porting will not be too difficult (hopefully). I don't have a inux or mac machine
+            atm, nut if anyone felt like it I would not be upset.
             
             
-           I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's to buggy or my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are much better at it have not put in the effort.
+           I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's to buggy or 
+           my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are much better at it have not put in the effort.
            If you know how to set up a bugtracker on github HMU here or on reddit or email: jerry@fam-base.net.
         
           
-            Donations to the developer of XMrig are active and set to 1%. If you'd like to donate to me to thank me or encourage me to work more it would be appreciated. 
+            Donations to the developer of XMrig are active and set to 1%. If you'd like to donate to me to thank me or
+            encourage me to work more it would be appreciated. 
              
              Monero 48EE538ATaagrtvQwSKy2PSmVxARCpmrqVR9dpZ6w8jsCoerXcSXnriHaU3mj14xKsChzcxs1aWRiMMnsPWabHFEGVQUmhq
              www.patreon.com/jerryhowell
