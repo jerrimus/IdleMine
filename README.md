@@ -26,17 +26,17 @@
         
               There is not a nicehash option, until the security issues are resolved I do not think 
               I will add one.
-        I know there are cryptonote coins not listed, charnacoin, freelabits, and ultranote as poccibilities,
+        I know there are cryptonote coins not listed, charnacoin, freelabits, and ultranote as possibilities,
         but don't have more than 1-2 servers.  A lot of other cryptonote coins are dead projects that are only
         still being traded bcause of minergate and/or name confusion (bytecoin&dashcoin). If you know of a good 
         currency I've missed please let me know.   
          
             At the moment IM is a windows only application and does require .net 4 or greater. I used winforms despite
-            a preference for wpf so that porting will not be too difficult (hopefully). I don't have a inux or mac machine
-            atm, nut if anyone felt like it I would not be upset.
+            a preference for wpf so that porting will not be too difficult (hopefully). I don't have a linux or mac machine
+            atm, but if anyone felt like it I would not be upset.
             
             
-           I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's to buggy or 
+           I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's too buggy or 
            my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are much better at it have not put in the effort.
            If you know how to set up a bugtracker on github HMU here or on reddit or email: jerry@fam-base.net.
         
