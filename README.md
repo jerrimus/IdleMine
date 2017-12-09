@@ -13,11 +13,12 @@ inputting wallet/pool info (don't forget to save it!).
      
   There are 3 modes of operation:
         
-        * Active mode: uses low cpu for when you are browsing or doing light computing. - Clock active mode
-        , choose level of CPU use, and hit start.
+        * Active mode: uses low cpu for when you are browsing or doing light computing.
+        - Check active mode,choose level of CPU use, and hit start.
          
-        * Idle Mine: if no activity (keyboard or mouse input) is detected in the timeframe you 
-        select, mining begins automatically   -        Select wallet & server, set time minimize and forget about it.
+        * Idle Mine: if no activity (keyboard or mouse input) is detected in the timeframe 
+        you select, mining begins automatically 
+       - Select wallet & server, set time minimize and forget about it.
          
         * Normal mode: push start and walk away
         
