@@ -8,7 +8,7 @@
 xmrig miner.  Setup involves running the installer and 
 inputting wallet/pool info (don't forget to save it!).
      
-  Download the zipped installer   [HERE}(https://github.com/jerrimus/IdleMine/releases)
+  Download the zipped installer   [HERE](https://github.com/jerrimus/IdleMine/releases)
      
      
   There are 3 modes of operation:
