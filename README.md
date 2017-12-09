@@ -5,11 +5,11 @@
 
 
     Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the 
-    [XMRIG](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and 
+    [xmrig](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and 
     inputting wallet/pool info (don't forget to save it!).
      
      
-     Download the zipped installer [RIGHT HERE}(https://github.com/jerrimus/IdleMine/releases)
+     Download the zipped installer [RIGHT HERE](https://github.com/jerrimus/IdleMine/releases)
       
         There are 3 modes of operation:
         
