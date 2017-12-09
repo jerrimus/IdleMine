@@ -5,9 +5,11 @@
 
 
     Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the 
-    [xmrig](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and 
+    [XMRIG](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and 
     inputting wallet/pool info (don't forget to save it!).
      
+     
+     Download the zipped installer [RIGHT HERE}(https://github.com/jerrimus/IdleMine/releases)
       
         There are 3 modes of operation:
         
@@ -35,12 +37,13 @@
         currency I've missed please let me know.   
          
             At the moment IM is a windows only application and does require .net 4 or greater. I used winforms despite
-            a preference for wpf so that porting will not be too difficult (hopefully). I don't have a linux or mac machine
-            atm, but if anyone felt like it I would not be upset.
+            a preference for wpf so that porting will not be too difficult (hopefully). I don't have a linux or mac 
+            machine   atm, but if anyone felt like it I would not be upset.
             
             
            I have stayed up late a lot working on this, so every decision was not made clearheaded. If it's too buggy or 
-           my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are much better at it have not put in the effort.
+           my code is atrocious I apologize. But hey, I made this with my total lack of knowledge when people who are
+           much better at it have not put in the effort.
            If you know how to set up a bugtracker on github HMU here or on reddit or email: jerry@fam-base.net.
         
           
