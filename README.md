@@ -5,23 +5,26 @@
 
 
     Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the 
-    [xmrig](https://github.com/xmrig/xmrig) miner.  Setup involves running the installer and 
+    xmrig miner.  Setup involves running the installer and 
     inputting wallet/pool info (don't forget to save it!).
      
      
-     Download the zipped installer [RIGHT HERE](https://github.com/jerrimus/IdleMine/releases)
-      
+     Download the zipped installer   https://github.com/jerrimus/IdleMine/releases
+     
+     
         There are 3 modes of operation:
         
-        * Active mode: uses low cpu for when you are browsing or doing light computing.
+        * Active mode: uses low cpu for when you are browsing or doing light computing. - Clock active mode
+        , choose level of CPU use, and hit start.
          
         * Idle Mine: if no activity (keyboard or mouse input) is detected in the timeframe you 
-        select, mining begins automatically 
+        select, mining begins automatically   -        Select wallet & server, set time minimize and forget about it.
          
         * Normal mode: push start and walk away
         
         
-        IM displays data from the miner onscreen, I would display hashrate but the json that xmrig exports has
+        IM displays data from the miner onscreen, Current fields are pool, ping, and total hashes. I would 
+        display hashrate but the json that xmrig exports has
         a zero for a field and I haven't figured that out yet.
         
           Currently only cryptonote coins are implemented, I do not know if it's worth it to cpu mine 
