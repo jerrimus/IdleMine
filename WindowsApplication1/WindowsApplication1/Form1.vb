@@ -44,8 +44,15 @@ Public Class IdleMine
     Private Sub IdleMine_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ismining = 0
         Dim cointype As String = "aeon"
+        counter = 0
+        If System.IO.File.Exists("a.pas") Then
 
-
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("a.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
         If System.IO.File.Exists("a.wal") Then
 
             Dim rd As System.IO.StreamReader
@@ -126,112 +133,126 @@ Public Class IdleMine
             liner = rd.ReadToEnd()
             sumosv.Text = liner
         End If
+        If System.IO.File.Exists("karb.wal") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("karb.wal")
+            liner = rd.ReadToEnd()
+            aeonwal.Text = liner
+        End If
+        If System.IO.File.Exists("karb.sv") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("karb.sv")
+            liner = rd.ReadToEnd()
+            aeonsv.Text = liner
+        End If
+        If System.IO.File.Exists("masari.wal") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("masari.wal")
+            liner = rd.ReadToEnd()
+            aeonwal.Text = liner
+        End If
+        If System.IO.File.Exists("masari.sv") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("masari.sv")
+            liner = rd.ReadToEnd()
+            aeonsv.Text = liner
+        End If
+        If System.IO.File.Exists("elec.wal") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("elec.wal")
+            liner = rd.ReadToEnd()
+            aeonwal.Text = liner
+        End If
+        If System.IO.File.Exists("elec.sv") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("elec.sv")
+            liner = rd.ReadToEnd()
+            aeonsv.Text = liner
+        End If
 
 
     End Sub
 
 
-
-    Private Sub aeonsel_CheckedChanged(sender As Object, e As EventArgs) Handles aeonsel.CheckedChanged
-        If aeonsel.Checked = False Then
-            aeonsv.Enabled = False
-            aeonwal.Enabled = False
-        End If
-        If aeonsel.Checked = True Then
-            cointype = "aeon"
-            aeonsv.Enabled = True
-            aeonwal.Enabled = True
-            leviarsel.Checked = False
-            intensesel.Checked = False
-            monerosel.Checked = False
-            sumosel.Checked = False
-
-
-
-        End If
-    End Sub
-
-    Private Sub leviarsel_CheckedChanged(sender As Object, e As EventArgs) Handles leviarsel.CheckedChanged
-
-        If leviarsel.Checked = False Then
-            leviarsv.Enabled = False
-            leviarwal.Enabled = False
-        End If
-        If leviarsel.Checked = True Then
-            cointype = "leviar"
-            leviarsv.Enabled = True
-            leviarwal.Enabled = True
-            aeonsel.Checked = False
-            intensesel.Checked = False
-            monerosel.Checked = False
-            sumosel.Checked = False
-
-
-        End If
-    End Sub
-
-    Private Sub intensesel_CheckedChanged(sender As Object, e As EventArgs) Handles intensesel.CheckedChanged
-        If intensesel.Checked = False Then
-            intensesv.Enabled = False
-            intensewal.Enabled = False
-        End If
-        If intensesel.Checked = True Then
-            cointype = "intense"
-            intensewal.Enabled = True
-            intensesv.Enabled = True
-            leviarsel.Checked = False
-            aeonsel.Checked = False
-            monerosel.Checked = False
-            sumosel.Checked = False
-
-
-
-        End If
-    End Sub
-
-    Private Sub monerosel_CheckedChanged(sender As Object, e As EventArgs) Handles monerosel.CheckedChanged
-        If monerosel.Checked = False Then
-            monerowal.Enabled = False
-            monerosv.Enabled = False
-        End If
-        If monerosel.Checked = True Then
-            cointype = "monero"
-            monerowal.Enabled = True
-            monerosv.Enabled = True
-            leviarsel.Checked = False
-            intensesel.Checked = False
-            aeonsel.Checked = False
-            sumosel.Checked = False
-
-
-
-        End If
-    End Sub
-
-    Private Sub sumosel_CheckedChanged(sender As Object, e As EventArgs) Handles sumosel.CheckedChanged
-        If sumosel.Checked = False Then
-            sumosv.Enabled = False
-            sumowal.Enabled = False
-        End If
-        If sumosel.Checked = True Then
-
-            cointype = "sumo"
-            sumosv.Enabled = True
-            sumowal.Enabled = True
-            leviarsel.Checked = False
-            intensesel.Checked = False
-            monerosel.Checked = False
-            aeonsel.Checked = False
-
-
-
-        End If
-    End Sub
 
 
 
     Private Sub SaveWalletToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveWalletToolStripMenuItem.Click
-
+        If cointype = "aeon" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("a.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If cointype = "intense" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("intense.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If cointype = "karb" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("karb.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If cointype = "leviar" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("leviar.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If cointype = "masari" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("masari.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If cointype = "monero" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("monero.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If cointype = "sumo" & pass.Checked = True Then
+            Dim liner As String
+            liner = pasbox.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("sumo.pas")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
         If aeonwal.Text <> "" Then
             Dim liner As String
             liner = aeonwal.Text
@@ -309,6 +330,54 @@ Public Class IdleMine
             liner = sumowal.Text
             Dim wx As System.IO.TextWriter
             wx = System.IO.File.CreateText("s.wal")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If sumosv.Text <> "" Then
+            liner = karbsv.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("karb.sv")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If sumowal.Text <> "" Then
+            liner = karbwal.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("karb.wal")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If sumosv.Text <> "" Then
+            liner = masarisv.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("masari.sv")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If sumowal.Text <> "" Then
+            liner = masariwal.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("masari.wal")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If elecsv.Text <> "" Then
+            liner = sumosv.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("elec.sv")
+            wx.Write(liner)
+            wx.Flush()
+            wx.Close()
+        End If
+        If elecwal.Text <> "" Then
+            liner = sumowal.Text
+            Dim wx As System.IO.TextWriter
+            wx = System.IO.File.CreateText("elec.wal")
             wx.Write(liner)
             wx.Flush()
             wx.Close()
@@ -544,9 +613,10 @@ Public Class IdleMine
 
     Private Sub clocky_Tick(sender As Object, e As EventArgs) Handles clocky.Tick
         counter = +1
-        If counter >= timeslid.Value & IMbox.Checked = True Then
-            strop.PerformClick()
-
+        If counter >= timeslid.Value Then
+            If IMbox.Checked = True Then
+                strop.PerformClick()
+            End If
         End If
     End Sub
 
@@ -595,6 +665,299 @@ Public Class IdleMine
 
 
 
+    Private Sub aeonmen_Click(sender As Object, e As EventArgs) Handles aeonmen.Click
+        cointype = "aeon"
+        Me.Text = "IdleMine 0.01  -  Aeon"
+        If System.IO.File.Exists("a.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("a.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        elecmen.Checked = False
+        intensemen.Checked = False
+        leviarmen.Checked = False
+        masarimen.Checked = False
+        moneromen.Checked = False
+        sumomen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = True
+        aeonsv.Visible = True
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = False
+        sumosv.Visible = False
+
+    End Sub
+
+    Private Sub elecmen_Click(sender As Object, e As EventArgs) Handles elecmen.Click
+        cointype = "elec"
+        Me.Text = "IdleMine 0.01  -  Electroneum"
+        If System.IO.File.Exists("elec.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("elec.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        intensemen.Checked = False
+        leviarmen.Checked = False
+        masarimen.Checked = False
+        moneromen.Checked = False
+        sumomen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = True
+        elecsv.Visible = True
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = False
+        sumosv.Visible = False
+    End Sub
+
+    Private Sub intensemen_Click(sender As Object, e As EventArgs) Handles intensemen.Click
+        cointype = "intense"
+        Me.Text = "IdleMine 0.01  -  Intensecoin"
+        If System.IO.File.Exists("intense.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("intense.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        elecmen.Checked = False
+        leviarmen.Checked = False
+        masarimen.Checked = False
+        moneromen.Checked = False
+        sumomen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = True
+        intensesv.Visible = True
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = False
+        sumosv.Visible = False
+    End Sub
+
+    Private Sub karbmen_Click(sender As Object, e As EventArgs) Handles karbmen.Click
+        cointype = "karb"
+        Me.Text = "IdleMine 0.01  -  Karbowanec"
+        If System.IO.File.Exists("karb.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("karb.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        intensemen.Checked = False
+        leviarmen.Checked = False
+        masarimen.Checked = False
+        moneromen.Checked = False
+        sumomen.Checked = False
+        elecmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = True
+        karbsv.Visible = True
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = False
+        sumosv.Visible = False
+    End Sub
+
+    Private Sub leviarmen_Click(sender As Object, e As EventArgs) Handles leviarmen.Click
+        cointype = "leviar"
+        Me.Text = "IdleMine 0.01  -  Leviarcoin"
+        If System.IO.File.Exists("leviar.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("leviar.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        intensemen.Checked = False
+        elecmen.Checked = False
+        masarimen.Checked = False
+        moneromen.Checked = False
+        sumomen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = True
+        leviarsv.Visible = True
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = False
+        sumosv.Visible = False
+    End Sub
+
+    Private Sub masarimen_Click(sender As Object, e As EventArgs) Handles masarimen.Click
+        cointype = "masari"
+        Me.Text = "IdleMine 0.01  -  Masari"
+        If System.IO.File.Exists("masari.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("masari.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        intensemen.Checked = False
+        leviarmen.Checked = False
+        elecmen.Checked = False
+        moneromen.Checked = False
+        sumomen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = True
+        masarisv.Visible = True
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = False
+        sumosv.Visible = False
+    End Sub
+
+    Private Sub moneromen_Click(sender As Object, e As EventArgs) Handles moneromen.Click
+        cointype = "monero"
+        Me.Text = "IdleMine 0.01  -  Monero"
+        If System.IO.File.Exists("monero.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("monero.pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        intensemen.Checked = False
+        leviarmen.Checked = False
+        masarimen.Checked = False
+        elecmen.Checked = False
+        sumomen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = True
+        monerosv.Visible = True
+        sumowal.Visible = False
+        sumosv.Visible = False
+    End Sub
+
+    Private Sub sumomen_Click(sender As Object, e As EventArgs) Handles sumomen.Click
+        cointype = "sumo"
+        Me.Text = "IdleMine 0.01  -  Sumokoin"
+        If System.IO.File.Exists("sumo.pas") Then
+
+            Dim rd As System.IO.StreamReader
+            Dim liner As String
+            rd = IO.File.OpenText("sumo..pas")
+            liner = rd.ReadToEnd()
+            pasbox.Text = liner
+        End If
+        aeonmen.Checked = False
+        intensemen.Checked = False
+        leviarmen.Checked = False
+        masarimen.Checked = False
+        moneromen.Checked = False
+        elecmen.Checked = False
+        karbmen.Checked = False
+        aeonwal.Visible = False
+        aeonsv.Visible = False
+        elecwal.Visible = False
+        elecsv.Visible = False
+        intensewal.Visible = False
+        intensesv.Visible = False
+        karbwal.Visible = False
+        karbsv.Visible = False
+        leviarwal.Visible = False
+        leviarsv.Visible = False
+        masariwal.Visible = False
+        masarisv.Visible = False
+        monerowal.Visible = False
+        monerosv.Visible = False
+        sumowal.Visible = True
+        sumosv.Visible = True
+    End Sub
+
+    Private Sub pass_CheckedChanged(sender As Object, e As EventArgs) Handles pass.CheckedChanged
+        If pass.Checked = True Then pasbox.Enabled = True
+        If pass.Checked = False Then pasbox.Enabled = False
+    End Sub
 End Class
 
 

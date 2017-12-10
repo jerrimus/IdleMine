@@ -175,6 +175,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aeon.png" />
+    <Content Include="electroneum.png" />
+    <Content Include="intensecoin.png" />
+    <Content Include="karbowanec.png" />
+    <Content Include="leviarcoin.png" />
+    <Content Include="masari.png" />
+    <Content Include="monero.png" />
+    <Content Include="sumokoin.png" />
     <Content Include="xmrig.exe" />
   </ItemGroup>
   <ItemGroup>
