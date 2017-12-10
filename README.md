@@ -1,7 +1,7 @@
 # IdleMine
  Graphic cryptocurrency miner for windows.
 
-![IM pic](https://i.imgur.com/V2T0cXJ.png "in action")
+![IM pic](https://i.imgur.com/NbEIk1T.png "in action")
 
 
   Idle mine is a cryptonote(lite) miner for windows. It is powered internally by the 
@@ -38,7 +38,7 @@ I will add one.
   I know there are cryptonote coins not listed, charnacoin, freelabits, and ultranote as possibilities,
         but don't have more than 1-2 servers.  A lot of other cryptonote coins are dead projects that are only
         still being traded bcause of minergate and/or name confusion (bytecoin&dashcoin). If you know of a good 
-        currency I've missed please let me know.   
+        currency I've missed please let me know ( I've added Karbowanec, Masari, and Electroneum.   
          
   At the moment IM is a windows only application and does require .net 4 or greater. I used winforms despite
             a preference for wpf so that porting will not be too difficult (hopefully). I don't have a linux or mac 
