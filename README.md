@@ -54,5 +54,5 @@ I will add one.
   Donations to the developer of XMrig are active and set to 1%. If you'd like to donate to me to thank me or
             encourage me to work more it would be appreciated. 
              
- Monero 48EE538ATaagrtvQwSKy2PSmVxARCpmrqVR9dpZ6w8jsCoerXcSXnriHaU3mj14xKsChzcxs1aWRiMMnsPWabHFEGVQUmhq
+ Aeon WmsE3PHPoUZ55ECCbsqCvC7qyKL8D3rPFYqwpFTtn6twQ9NbUUq3vFm6ogbVjPTWm787HbSyzZJQRb4rsUffpb2R1L8QWJJey
  www.patreon.com/jerryhowell
